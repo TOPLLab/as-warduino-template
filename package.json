@@ -1,0 +1,19 @@
+{
+  "name": "as-warduino-template",
+  "version": "0.1.0",
+  "description": "WARDuino project in AssemblyScript",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "npm run build:debug && npm run build:release",
+    "build:debug": "npx asc --config asconfig.json --target debug",
+    "build:release": "npx asc --config asconfig.json --target release"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "as-warduino": "file:./as-warduino-0.1.1.tgz",
+    "assemblyscript": "^0.27.5",
+    "typescript": "^5.1.6"
+  }
+}
